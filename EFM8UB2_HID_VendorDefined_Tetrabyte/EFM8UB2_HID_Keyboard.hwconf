@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice name="EFM8UB20F64G-A-QFP48" partId="mcu.8051.efm8.ub2.efm8ub20f64g-a-qfp48" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+  <mode name="DefaultMode">
+    <property object="CIP51_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="CLOCK_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="CLOCK_0" propertyId="clock.clockselect.selectsystemclocksource" value="High-Frequency Oscillator"/>
+    <property object="CLOCK_0" propertyId="clock.clockselect.sysclk" value="48.000 MHz"/>
+    <property object="CLOCK_0" propertyId="clock.clockselect.usbclk" value="48.000 MHz"/>
+    <property object="CROSSBAR0" propertyId="xbar0.pca0.cex" value="CEX0 and CEX1"/>
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="INTERRUPT_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="INTERRUPT_0" propertyId="interrupt.extendedinterruptenable1.enableprogrammablecounterarraypca0interrupt" value="Enabled"/>
+    <property object="INTERRUPT_0" propertyId="interrupt.interruptenable.enableallinterrupts" value="Enabled"/>
+    <property object="INTERRUPT_0" propertyId="interruptenables.codegenerationoptions.generateinterruptfunctions" value="Enabled"/>
+    <property object="P0.0" propertyId="ports.settings.latch" value="Low"/>
+    <property object="P0.0" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="P0.1" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="P1.5" propertyId="ports.settings.inputmode" value="Analog"/>
+    <property object="P1.5" propertyId="ports.settings.iomode" value="Analog I/O"/>
+    <property object="P1.5" propertyId="ports.settings.skip" value="Skipped"/>
+    <property object="PBCFG_0" propertyId="pbcfg.settings.enablecrossbar" value="Enabled"/>
+    <property object="PCACH_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannel.capturecompareflaginterrupt" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcachannelcapturecomparemode.enablechannelcapturepositivefunction" value="Enabled"/>
+    <property object="PCACH_0" propertyId="pcach.pcacontrol.channelcapturecomparemode" value="Capture triggered by positive edge on CEX"/>
+    <property object="PCACH_1" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_1" propertyId="pcach.pcachannel.capturecompareflaginterrupt" value="Enabled"/>
+    <property object="PCACH_1" propertyId="pcach.pcachannelcapturecomparemode.enablechannelcapturepositivefunction" value="Enabled"/>
+    <property object="PCACH_1" propertyId="pcach.pcacontrol.channelcapturecomparemode" value="Capture triggered by positive edge on CEX"/>
+    <property object="PCACH_2" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_3" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_4" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCACH_4" propertyId="pcach.pcachannel.matchfunction" value="Enabled"/>
+    <property object="PCACH_4" propertyId="pcach.watchdogtimer.timeoutperiodactual" value="64.000 us"/>
+    <property object="PCACH_4" propertyId="pcach.watchdogtimer.timeoutperiodmax" value="16.384 ms"/>
+    <property object="PCACH_4" propertyId="pcach.watchdogtimer.timeoutperiodmin" value="64.000 us"/>
+    <property object="PCA_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.pcaclockfrequency" value="4.000 MHz"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.pcaclockfrequencyintegervalue" value="4000000.0"/>
+    <property object="PCA_0" propertyId="pca.pcacountertimerconfiguration.pcaclockperiod" value="250.000 ns"/>
+    <property object="PCA_0" propertyId="pca.pcastartrun.pcacountertimerrunstatus" value="Stopped"/>
+    <property object="PCA_0" propertyId="pca.watchdogcontrol.enablewatchdogtimer" value="Disabled"/>
+    <property object="USBLIB_0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="USBLIB_0" propertyId="device.deviceproperties.bmaxpacketsize" value="64"/>
+    <property object="USBLIB_0" propertyId="device.deviceproperties.productstring" value="EFM8 USB HID Keyboard"/>
+    <property object="USBLIB_0" propertyId="device.deviceproperties.serialnumberstring" value="0123456789ABCDEF"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint1in.endpoint1in" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint1in.maxpacketsizebytes" value="64"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint1in.pollingintervalms" value="24"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint1in.transfertype" value="Interrupt"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint1in.usedbypreset" value="0"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint1out.maxpacketsizebytes" value="64"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint2in.maxpacketsizebytes" value="64"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint2out.maxpacketsizebytes" value="64"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint3in.maxpacketsizebytes" value="64"/>
+    <property object="USBLIB_0" propertyId="endpoints.endpoint3out.maxpacketsizebytes" value="64"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.hidpollingintervalms" value="24"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.hidreportdescriptor" value="
+  0x05, 0x01,                      // USAGE_PAGE (Generic Desktop)
+  0x09, 0x06,                      // USAGE (Keyboard)
+  0xa1, 0x01,                      // COLLECTION (Application)
+  0x05, 0x07,                      // USAGE_PAGE (Keyboard)
+  0x19, 0xe0,                      // USAGE_MINIMUM (Keyboard LeftControl)
+  0x29, 0xe7,                      // USAGE_MAXIMUM (Keyboard Right GUI)
+  0x15, 0x00,                      // LOGICAL_MINIMUM (0)
+  0x25, 0x01,                      // LOGICAL_MAXIMUM (1)
+  0x75, 0x01,                      // REPORT_SIZE (1)
+  0x95, 0x08,                      // REPORT_COUNT (8)
+  0x81, 0x02,                      // INPUT (Data,Var,Abs)
+  0x15, 0x00,                      // LOGICAL_MINIMUM (0)
+  0x25, 0x01,                      // LOGICAL_MAXIMUM (1)
+  0x75, 0x01,                      // REPORT_SIZE (1)
+  0x95, 0x08,                      // REPORT_COUNT (8)
+  0x81, 0x01,                      // INPUT (Cnst,Ary,Abs)
+  0x19, 0x00,                      // USAGE_MINIMUM (Reserved (no event indicated))
+  0x29, 0x65,                      // USAGE_MAXIMUM (Keyboard Application)
+  0x15, 0x00,                      // LOGICAL_MINIMUM (0)
+  0x25, 0x65,                      // LOGICAL_MAXIMUM (101)
+  0x75, 0x08,                      // REPORT_SIZE (8)
+  0x95, 0x06,                      // REPORT_COUNT (6)
+  0x81, 0x00,                      // INPUT (Data,Ary,Abs)
+  0x05, 0x08,                      // USAGE_PAGE (LEDs)
+  0x19, 0x01,                      // USAGE_MINIMUM (Num Lock)
+  0x29, 0x03,                      // USAGE_MAXIMUM (Scroll Lock)
+  0x15, 0x00,                      // LOGICAL_MINIMUM (0)
+  0x25, 0x01,                      // LOGICAL_MAXIMUM (1)
+  0x75, 0x01,                      // REPORT_SIZE (1)
+  0x95, 0x03,                      // REPORT_COUNT (3)
+  0x91, 0x02,                      // OUTPUT (Data,Var,Abs)
+  0x75, 0x01,                      // REPORT_SIZE (1)
+  0x95, 0x05,                      // REPORT_COUNT (5)
+  0x91, 0x01,                      // OUTPUT (Cnst,Ary,Abs)
+  0xc0                             // END_COLLECTION
+"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.hidreporttemplate" value="Keyboard"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.interfaceclass" value="HID (Human Interface Device)"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.interfacestring" value="HID Keyboard"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.preset" value="HID Keyboard"/>
+    <property object="USBLIB_0" propertyId="interfaces.interface0.protocol" value="1"/>
+    <property object="USBLIB_0" propertyId="library.callbackfunctions.resetcallback" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.callbackfunctions.selfpoweredcallback" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.callbackfunctions.setupcommandcallback" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.callbackfunctions.startofframecallback" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.callbackfunctions.statechangecallback" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.libraryconfiguration.clockrecovery" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.powersavingmode.enteronsuspend" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.powersavingmode.enteronvbusoff" value="Enabled"/>
+    <property object="USBLIB_0" propertyId="library.powersavingmode.powersavemode" value="( USB_PWRSAVE_MODE_ONSUSPEND \
+                                               | USB_PWRSAVE_MODE_ONVBUSOFF )"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#8594; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+    <property object="RESET &#8594; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+  </modeTransition>
+</device:XMLDevice>
