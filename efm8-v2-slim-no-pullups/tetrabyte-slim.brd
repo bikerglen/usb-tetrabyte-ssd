@@ -433,6 +433,19 @@
 <circle x="29.845" y="1.905" radius="2.31" width="0.0254" layer="48"/>
 <circle x="29.845" y="74.295" radius="2.31" width="0.0254" layer="48"/>
 <circle x="1.905" y="74.295" radius="2.31" width="0.0254" layer="48"/>
+<wire x1="9.084996875" y1="49.400003125" x2="4.885003125" y2="49.400003125" width="0.2032" layer="121"/>
+<wire x1="4.885003125" y1="49.400003125" x2="4.885003125" y2="52.199996875" width="0.2032" layer="121"/>
+<wire x1="4.885003125" y1="52.199996875" x2="9.084996875" y2="52.199996875" width="0.2032" layer="121"/>
+<wire x1="9.084996875" y1="52.199996875" x2="9.084996875" y2="49.400003125" width="0.2032" layer="121"/>
+<wire x1="8.084996875" y1="51" x2="7.485" y2="51.599996875" width="0.2032" layer="121" curve="90"/>
+<wire x1="8.084996875" y1="51" x2="8.084996875" y2="50.6" width="0.2032" layer="121"/>
+<wire x1="7.485" y1="50.000003125" x2="8.085" y2="50.6" width="0.2032" layer="121" curve="89.999702"/>
+<wire x1="7.485" y1="50.000003125" x2="6.485" y2="50.000003125" width="0.2032" layer="121"/>
+<wire x1="5.885003125" y1="50.6" x2="6.485" y2="50" width="0.2032" layer="121" curve="89.999702"/>
+<wire x1="5.885003125" y1="50.6" x2="5.885003125" y2="51" width="0.2032" layer="121"/>
+<wire x1="6.485" y1="51.599996875" x2="5.885003125" y2="51" width="0.2032" layer="121" curve="90"/>
+<wire x1="6.485" y1="51.599996875" x2="7.485" y2="51.599996875" width="0.2032" layer="121"/>
+<text x="4.22275" y="50.8" size="0.8128" layer="121" font="vector" ratio="16" rot="SR270" align="top-center">BTLD</text>
 </plain>
 <libraries>
 <library name="Glen-EFM8UB2">
@@ -1878,6 +1891,28 @@ distributor Buerklin, 17G562</description>
 </package>
 </packages>
 </library>
+<library name="adafruit">
+<packages>
+<package name="KMR2">
+<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="1.4" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-1.4" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.8" x2="-1.1" y2="-0.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="-0.2" x2="-1.1" y2="0.2" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.2" x2="-0.5" y2="0.8" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.8" x2="1.1" y2="0.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.1" y1="0.2" x2="1.1" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.2" x2="0.5" y2="-0.8" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.5" y1="-0.8" x2="-0.5" y2="-0.8" width="0.127" layer="21"/>
+<smd name="1" x="2" y="0.8" dx="1" dy="1" layer="1"/>
+<smd name="2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="4" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2143,6 +2178,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="14.986" y="12.7" size="1.27" layer="27" ratio="10" rot="R270"/>
 <attribute name="NAME" x="4.22275" y="23.368" size="0.8128" layer="25" font="vector" ratio="16" rot="SR270" align="top-left"/>
 </element>
+<element name="SW1" library="adafruit" package="KMR2" value="KMR211NGLFS " x="6.985" y="50.8"/>
 </elements>
 <signals>
 <signal name="S1-6">
@@ -2307,6 +2343,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="S2" pad="6"/>
 <contactref element="S2" pad="7"/>
 <contactref element="S2" pad="8"/>
+<contactref element="SW1" pad="2"/>
+<contactref element="SW1" pad="4"/>
+<wire x1="4.985" y1="50" x2="8.985" y2="50" width="0.1524" layer="1"/>
+<via x="4.92125" y="48.73625" extent="1-16" drill="0.3"/>
+<wire x1="4.92125" y1="48.73625" x2="4.92125" y2="49.93625" width="0.1524" layer="1"/>
+<wire x1="4.92125" y1="49.93625" x2="4.985" y2="50" width="0.1524" layer="1"/>
 </signal>
 <signal name="NRESET">
 <contactref element="DEBUG" pad="3"/>
@@ -2429,9 +2471,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="6.0325" y1="64.77" x2="6.35" y2="64.4525" width="0.1524" layer="1"/>
 <wire x1="6.35" y1="64.4525" x2="6.35" y2="60.2225" width="0.1524" layer="1"/>
 <wire x1="6.35" y1="60.2225" x2="8.09625" y2="58.47625" width="0.1524" layer="1"/>
-</signal>
-<signal name="BTLD">
-<contactref element="U1" pad="23"/>
 </signal>
 <signal name="S3-2">
 <contactref element="S3" pad="2"/>
@@ -2682,6 +2721,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="3.4925" y1="52.22875" x2="3.65125" y2="22.06625" width="0.1524" layer="1"/>
 <wire x1="3.65125" y1="22.06625" x2="4.1275" y2="21.59" width="0.1524" layer="1"/>
 <wire x1="4.1275" y1="21.59" x2="5.715" y2="21.59" width="0.1524" layer="1"/>
+</signal>
+<signal name="BTLD">
+<contactref element="SW1" pad="1"/>
+<contactref element="U1" pad="23"/>
+<wire x1="8.985" y1="51.6" x2="9.84875" y2="51.6" width="0.1524" layer="1"/>
+<wire x1="9.84875" y1="51.6" x2="10.60875" y2="52.36" width="0.1524" layer="1"/>
+<wire x1="11.7" y1="52.36" x2="10.60875" y2="52.36" width="0.1524" layer="1"/>
 </signal>
 </signals>
 </board>
